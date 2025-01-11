@@ -1,0 +1,50 @@
+def plot_confusion_matrix(cm, classes, normalize=False, title='State transition matrix', cmap=plt.cm.Blues):
+    
+    plt.figure()
+    plt.imshow(cm, interpolation='nearest', cmap=cmap)
+    plt.title(title)
+    plt.colorbar() #右边的颜色条
+    tick_marks = np.arange(len(classes))
+    plt.xticks(tick_marks, classes, rotation=90) #x轴的坐标旋转
+    plt.yticks(tick_marks, classes)
+
+    plt.axis("equal") #xy等长
+
+    ax = plt.gca() #x轴的刻度内容的范围
+    left, right = plt.xlim() #x、y轴的作图范围
+    ax.spines['left'].set_position(('data', left)) #将坐标轴放在左边，“data”表示通过值来设定x轴的位置
+    ax.spines['right'].set_position(('data', right))
+    for edge_i in ['top', 'bottom', 'right', 'left']:
+        ax.spines[edge_i].set_edgecolor("white") #颜色设置 边缘设成白色
+        
+
+    thresh = cm.max() / 2.
+    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])): #内积
+        num = '{:.2f}'.format(cm[i, j]) if normalize else int(cm[i, j])
+        plt.text(j, i, #x,y坐标上的值
+                 num,  #写的文字
+                 verticalalignment='center',   #垂直对齐方式
+                 horizontalalignment="center", #水平对齐方式
+                 color="white" if num > thresh else "black" #颜色
+                 ) 
+    
+    plt.ylabel('Self patt')
+    plt.xlabel('Transition patt')
+    
+    plt.tight_layout() #会自动调整子图参数，使之填充整个图像区域
+    plt.savefig('res/method_2.png', transparent=True, dpi=800) #保存图像
+    
+    plt.show() #画
+
+
+trans_mat = np.array([[62, 16, 32 ,9, 36],
+                      [16, 16, 13, 8, 7],
+                      [28, 16, 61, 8, 18],
+                      [16, 2, 10, 40, 48],
+                      [52, 11, 49, 8, 39]], dtype=int)
+
+"""method 2"""
+if True:
+    label = ["Patt {}".format(i) for i in range(1, trans_mat.shape[0]+1)]
+    plot_confusion_matrix(trans_mat, label)
+
