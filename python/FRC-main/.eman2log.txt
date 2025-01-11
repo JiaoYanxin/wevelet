@@ -1,0 +1,4 @@
+2023/11/19 16:54:50	incomplete         	123476/    -1	jiaoyx	fourier_ring_corr.py /home/jiaoyx/singlexsart/pnp/data/BBa/omit/omit.mrc /home/jiaoyx/singlexsart/pnp/data/BBa/result/ICON_omit/imod_reproj_iconomit.mrc
+2023/11/19 20:39:42	2023/11/19 20:39:42	133059/    -1	jiaoyx	fourier_ring_corr.py /home/jiaoyx/singlexsart/pnp/data/BBa/omit/omit.mrc /home/jiaoyx/singlexsart/pnp/data/BBa/result/ICON_omit/imod_reproj_iconomit.mrc
+2023/11/19 20:40:23	incomplete         	133125/    -1	jiaoyx	fourier_ring_corr.py /home/jiaoyx/singlexsart/pnp/data/BBa/omit/omit.mrc /home/jiaoyx/singlexsart/pnp/data/BBa/result/ICON_omit/imod_reproj_iconomit.mrc
+2023/11/19 20:40:29	2023/11/19 20:40:29	133145/    -1	jiaoyx	fourier_ring_corr.py /home/jiaoyx/singlexsart/pnp/data/BBa/omit/omit.mrc /home/jiaoyx/singlexsart/pnp/data/BBa/result/ICON_omit/imod_reproj_iconomit.mrc
