@@ -1,0 +1,19 @@
+{
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "complex": "cpp",
+        "string_view": "cpp",
+        "main-mpi": "c",
+        "*.tcc": "c",
+        "algorithm": "c",
+        "random": "c",
+        "fstream": "c",
+        "istream": "c",
+        "ostream": "c",
+        "utility": "c",
+        "vector": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "valarray": "cpp"
+    }
+}
